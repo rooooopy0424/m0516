@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 공식 : 부모는 relative 자식 : absolute*/
+        .container {
+            position: relative;
+        }
+        .container img{
+            width : 100%;
+        }
+        
+        .text-block {
+            position: absolute;
+            /*bottom : 20px;*/
+            right: 20px;
+            left: 20px;
+            top: 20px;
+            background-color: black;
+            color: white;
+            padding: 0 20px;
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>이미지 위에 글자</h3>
+    <div class="container">
+    <img src="img/mini.jpg" alt="">
+    <!--이미지 위에 들어갈 글자-->
+    <div class="text-block">
+        <h4>이미지 위에 들어가는 글자 타이틀</h4>
+        <p>이미지에 올라왔지롱~~</p>
+    </div>
+
+
+</div>
+</body>
+</html>
